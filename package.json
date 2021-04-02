@@ -2,7 +2,8 @@
   "name": "deep-thoughts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",  "scripts": {
+  "main": "index.js",
+  "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
@@ -21,7 +22,8 @@
   },
   "homepage": "https://github.com/Elysiayn/deep-thoughts#readme",
   "dependencies": {
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "concurrently": "^6.0.0"
